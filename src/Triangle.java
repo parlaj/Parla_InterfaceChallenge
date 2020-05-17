@@ -1,3 +1,4 @@
+
 public class Triangle extends Shape{
     private double base, sideA, sideB;
 
@@ -18,4 +19,7 @@ public class Triangle extends Shape{
         return 0.00;
     }
     public double getPerimeter() {return sideA+sideB+base;}
+    public void draw(Sketch sketch) {
+
+    }
 }

@@ -1,3 +1,4 @@
+
 public class Circle extends Shape {
 
     private double radius;
@@ -13,5 +14,10 @@ public class Circle extends Shape {
 
     public double getPerimeter() {
         return 2*Math.PI*radius;
+    }
+
+    public void draw(Sketch sketch) {
+
+         sketch.circle((float) getPosition().getX(),(float) getPosition().getY(),(float) radius*2);
     }
 }
